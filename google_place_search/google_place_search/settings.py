@@ -70,6 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'google_place_search.wsgi.application'
 
+GOOGLE_MAPS_KEY = 'AIzaSyDcQw4W7WKaxw-MQHJhv0btlWsspQ26yX4'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
@@ -85,6 +86,9 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
+AUTH_PASSWORD_VALIDATORS = []
+
+"""
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -99,6 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+"""
 
 
 # Internationalization
