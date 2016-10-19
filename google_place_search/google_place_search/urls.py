@@ -17,9 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from search.views import MyMapView
+from search import api
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', MyMapView.as_view()),
+    url(r'^api/get_place?(?P<search_term>[a-zA-Z]+)/$', api.get_places),
 ]
